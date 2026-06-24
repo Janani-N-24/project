@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Glamora">
+      <meta name="description" content="Discover luxury beauty products at Glamora. Shop premium skincare, makeup, fragrances, and self-care essentials for a radiant look.">
+      <title>Glamora | Luxury Beauty & Cosmetics</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-phone-alt"></i>+1 (700) 765-4321</span>
+                  <span><i class="fas fa-envelope"></i>support@glamora.com</span>
+                  <span><i class="fas fa-map-marker-alt"></i>42 Flavor Street, NY</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="ttag"><i class="fas fa-gift me-1"></i>20% Off on Your First Order!</span>
+                  <div class="tsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                  <div class="bico"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                  <div>
+                     <div class="bname">Glam<span>ora</span></div>
+                     <div class="bsub">Beauty & Cosmetics</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#category">Categories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Products</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#blog">New Launch</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-cart me-1"></i>Shop Now</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>Find Your Perfect Beauty Products</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="Search makeup, skincare, lipstick..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="all">
+                  <img src="img/categories/1.jpg" alt=""/>All Products
+               </div>
+               <div class="sovcat" data-cat="burgers">
+                  <img src="img/categories/2.jpg" alt=""/>Skincare
+               </div>
+               <div class="sovcat" data-cat="makeup">
+                  <img src="img/categories/3.jpg" alt=""/>Makeup
+               </div>
+               <div class="sovcat" data-cat="lipsticks">
+                  <img src="img/categories/4.jpg" alt=""/>Lipsticks
+               </div>
+               <div class="sovcat" data-cat="fragrances">
+                  <img src="img/categories/5.jpg" alt=""/>Fragrances
+               </div>
+               <div class="sovcat" data-cat="haircare">
+                  <img src="img/categories/6.jpg" alt=""/>Hair Care
+               </div>
+               <div class="sovcat" data-cat="beautytools">
+                  <img src="img/categories/7.jpg" alt=""/>Beauty Tools
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+               <span class="ttag">Matte Lipstick</span>
+               <span class="ttag">Vitamin C Serum</span>
+               <span class="ttag">Hydrating Moisturizer</span>
+               <span class="ttag">BB Cream</span>
+               <span class="ttag">Luxury Perfume</span>
+               <span class="ttag">Face Cleanser</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">COSMETICS</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>#1 Rated Beauty & Cosmetics Brand</span>
+                  </div>
+                  <h1 class="htitle">Radiant<br><span class="hl">Beauty</span><br/>for Every Moment</h1>
+                  <p class="hdesc">Experience premium skincare and makeup crafted with quality ingredients. From flawless foundations to nourishing skincare essentials, every product is designed to enhance your natural beauty.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-shopping-bag"></i>Explore Products</a>
+                     <!-- FIX 2: Magnific popup video trigger -->
+					 <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
+						<div class="pico"><i class="fas fa-play"></i></div>
+						<span>Watch Our Story</span>
+					 </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">950<em>+</em></span><small>Happy Customers</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">120<em>+</em></span><small>Beauty Products</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">15<em>+</em></span><small> Beauty Expertise</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">12<em>yr</em></span><small> Experience</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/banner-img.png" alt="Burger"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fas fa-gift"></i></div>
+                        <div><span class="fcnum">Exclusive Offers</span><span class="fcsm">30% off today</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi y"><i class="fas fa-star"></i></div>
+                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
+                        <div><span class="fcnum">20 min</span><span class="fcsm">Fast delivery</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fas fa-circle"></i>Matte Lipsticks</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Liquid Foundation</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Compact Powder &amp; Concealer</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Mascara</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Eyeliner</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Eyeshadow Palette</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Highlighter</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Face Cleanser</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Hydrating Toner</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Vitamin C Serum</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Moisturizer</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Sunscreen SPF 50</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Face Mask</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Night Repair Cream</div>
+         </div>
+      </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Collections</span>
+               <h2 class="stitle">Shop by <span>Category</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Explore a curated range of makeup and skincare products, crafted to help you achieve a flawless look and radiant, healthy skin</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="img/category/1.jpg" alt=""/>
+                     <div class="catnm">All products</div>
+                     <div class="catct">99 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="makeup">
+                     <img class="catimg" src="img/category/2.jpg" alt=""/>
+                     <div class="catnm">Makeup</div>
+                     <div class="catct">24 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="lipsticks">
+                     <img class="catimg" src="img/category/3.jpg" alt=""/>
+                     <div class="catnm">Lipsticks</div>
+                     <div class="catct">18 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="fragrances">
+                     <img class="catimg" src="img/category/4.jpg" alt=""/>
+                     <div class="catnm">Fragrances</div>
+                     <div class="catct">15 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+                  <div class="catcard" data-filter="haircare">
+                     <img class="catimg" src="img/category/5.jpg" alt=""/>
+                     <div class="catnm">Haircare</div>
+                     <div class="catct">12 items</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="catcard" data-filter="beautytools">
+                     <img class="catimg" src="img/category/6.jpg" alt=""/>
+                     <div class="catnm">Beauty Tools</div>
+                     <div class="catct">20 items</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="aexp"><span class="anum">12+</span><small>Years of<br/>Excellence</small></div>
+                     <div class="amain"><img src="img/about1.jpg" alt="Restaurant"/></div>
+                     <div class="asm"><img src="img/about2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">Our Story</span>
+                  <h2 class="stitle text-start">Discover the beauty behind <span>Glamora</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Founded in 2012, Glamora began with a simple mission — to help everyone feel confident and beautiful through high-quality skincare and makeup products. What started as a small beauty venture has grown into a trusted cosmetics brand loved by thousands of customers for its commitment to quality, innovation, and self-care.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-award"></i></div>
+                        <div>
+                           <h6>Premium Quality</h6>
+                           <p>We carefully select skin-friendly ingredients and advanced formulations to create products that nourish, protect, and enhance your natural beauty.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-magic"></i></div>
+                        <div>
+                           <h6>Expertly Crafted Beauty Solutions</h6>
+                           <p>From flawless foundations to rejuvenating skincare essentials, every product is developed with beauty expertise and a passion for excellence.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-truck"></i></div>
+                        <div>
+                           <h6>Fast & Reliable Delivery</h6>
+                           <p>Shop your favorite beauty products online and enjoy quick, secure delivery straight to your doorstep, ensuring your beauty routine never misses a moment.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-bag"></i>View Products</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ============================================================
+         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Beauty Collection</span>
+               <h2 class="stitle">Our Premium <span>Products</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- FIX 3 � filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="all">All Products</button>
+               <button class="filtbtn" data-f="skincare">Skincare</button>
+               <button class="filtbtn" data-f="makeup">Makeup</button>
+               <button class="filtbtn" data-f="lipsticks">Lipsticks</button>
+               <button class="filtbtn" data-f="fragrances">Fragrances</button>
+               <button class="filtbtn" data-f="haircare">Hair Care</button>
+               <button class="filtbtn" data-f="beautytools">Beauty Tools</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               <!-- CARD 1: Skincare Collection -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="skincare" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/category/1.jpg"
+                     data-title=" Radiance Renewal Skincare Set"
+                     data-cat="Skincare"
+                     data-price="$14.99" data-old="$34.99"
+                     data-rating="4.9" data-reviews="128"
+                     data-cal="620" data-time="12"
+                     data-desc=" Hydrating cleanser, nourishing serum, and moisturizer designed for healthy, glowing skin."
+                     data-tags="Premium,Bestseller">
+                     <div class="mimg">
+                        <img src="img/category/1.jpg" alt=" Radiance Renewal Skincare Set"/>
+                        <div class="mbdg hot"><i class="fas fa-star"></i>Limited Edition</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Skincare</div>
+                        <div class="mtit"> Radiance Renewal Skincare Set</div>
+                        <div class="mdesc"> Hydrating cleanser, nourishing serum, and moisturizer designed for healthy, glowing skin.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice"> $34.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 2: Makeup -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="makeup" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/category/2.jpg"
+                     data-title="Glamora Professional Makeup Kit"
+                     data-cat="Makeup"
+                     data-price="$49.99" data-old="$24.99"
+                     data-rating="4.8" data-reviews="95"
+                     data-cal="480" data-time="18"
+                     data-desc=" Complete beauty collection featuring eyeshadows, blushes, highlighters, and contour essentials."
+                     data-tags="Trendy,New">
+                     <div class="mimg">
+                        <img src="img/category/2.jpg" alt="Eyeshadow"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> New</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Makeup</div>
+                        <div class="mtit">Glamora Professional Makeup Kit</div>
+                        <div class="mdesc"> Complete beauty collection featuring eyeshadows, blushes, highlighters, and contour essentials.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$49.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 3: Chicken -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="lipsticks" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/category/3.jpg"
+                     data-title= "Velvet Matte Lip Collection"
+                     data-cat="Lipsticks"
+                     data-price="$19.99" data-old="$16.99"
+                     data-rating="5.0" data-reviews="210"
+                     data-cal="710" data-time="15"
+                     data-desc=" Long-lasting, richly pigmented lipsticks with a smooth matte finish and all-day comfort."
+                     data-tags="Bestseller,Trending">
+                     <div class="mimg">
+                        <img src="img/category/3.jpg" alt="Velvet Matte Lip Collection"/>
+                        <div class="mbdg"><i class="fas fa-star"></i> Best Seller</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Lipsticks</div> 
+                        <div class="mtit">Velvet Matte Lip Collection</div>
+                        <div class="mdesc"> Long-lasting, richly pigmented lipsticks with a smooth matte finish and all-day comfort.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$19.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 4: Wraps -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="fragrances" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/category/4.jpg"
+                     data-title="Bloom Essence Perfume"
+                     data-cat="Fragrances"
+                     data-price="$44.99" data-old=""
+                     data-rating="4.5" data-reviews="74"
+                     data-cal="520" data-time="10"
+                     data-desc=" A luxurious blend of floral and fruity notes crafted for elegance and confidence."
+                     data-tags="New,Trending">
+                     <div class="mimg">
+                        <img src="img/category/4.jpg" alt="Fragrances"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Fragrances</div>
+                        <div class="mtit">Bloom Essence Perfume</div>
+                        <div class="mdesc"> A luxurious blend of floral and fruity notes crafted for elegance and confidence.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$44.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 5: Beauty Essentials -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="haircare" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/category/5.jpg"
+                     data-title="Haircare Set"
+                     data-cat="Haircare"
+                     data-price="$29.99" data-old="$19.99"
+                     data-rating="4.9" data-reviews="56"
+                     data-cal="390" data-time="8"
+                     data-desc="Premium shampoo, conditioner, and hair serum for smooth, healthy, and vibrant hair."
+                     data-tags="New,Customer Favourite">
+                     <div class="mimg">
+                        <img src="img/category/5.jpg" alt="Haircare Set"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> New</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Haircare</div>
+                        <div class="mtit">Haircare Set</div>
+                        <div class="mdesc">Premium shampoo, conditioner, and hair serum for smooth, healthy, and vibrant hair.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$29.99 <small>$11.99</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 6: Pasta -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="beautytools" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/category/6.jpg"
+                     data-title=" Professional Beauty Brush Set"
+                     data-cat="Beauty Tools"
+                     data-price="$14.99" data-old=""
+                     data-rating="4.9" data-reviews="88"
+                     data-cal="560" data-time="20"
+                     data-desc="Broad-spectrum protection against harmful UVA and UVB rays with a non-greasy formula."
+                     data-tags="Best Seller, trending">
+                     <div class="mimg">
+                        <img src="img/category/6.jpg" alt=" Professional Beauty Brush Set"/>
+                        <div class="mbdg hot">Editor's Pick</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Beauty Tools</div>
+                        <div class="mtit"> Professional Beauty Brush Set</div>
+                        <div class="mdesc">Broad-spectrum protection against harmful UVA and UVB rays with a non-greasy formula.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$14.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="#category" class="btn-red"><i class="fas fa-th-large"></i>View By Category</a></div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         FIX 4 � MENU DETAIL POPUP MODAL
+         ============================================================ -->
+      <div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="font-size:.82rem;color:#aaa;margin-left:9px;">portion</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+            </div>
+         </div>
+      </div>
+      <!-- SPECIAL OFFER -->
+      <section id="special">
+         <div class="spbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6" data-aos="fade-right">
+                  <div class="sptag"><i class="fas fa-bolt me-1"></i>Limited  Offer</div>
+                  <h2 class="sptitle">Get 40% Off<br/>Velvet Matte<br/><span>Lipstick</span> Collection</h2>
+                  <p class="spdesc">Discover your perfect shade with Glamora's best-selling lipstick collection. From elegant nudes to bold reds, enjoy long-lasting color, smooth application, and all-day comfort.</p>
+                  <div class="cdwrap">
+                     <div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">Hours</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">Minutes</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdS">16</span><span class="cdlbl">Seconds</span></div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-bag"></i>Shop Now</a>
+               </div>
+               <div class="col-lg-6" data-aos="fade-left">
+                  <div class="spimgw">
+                     <div class="spglow"></div>
+                     <div class="sppbdg"><span class="old">$19.99</span><span class="np">$10.99</span></div>
+                     <img src="img/off-img.jpg" alt="Combo Lipsticks"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         GALLERY � FIX 7 (click opens detail popup)
+         ============================================================ -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Beauty Gallery</span>
+               <h2 class="stitle">Explore Our <span> Beauty Collection</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/portfolio/work1.jpg"
+                  data-gtitle="Skincare"
+                  data-gdesc="Nourish and protect your skin with our premium skincare essentials. From hydrating serums to rejuvenating moisturizers, discover everything you need for a healthy, radiant glow.">
+                  <img src="img/portfolio/work1.jpg" alt="Skincare"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Skincare </span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/portfolio/work2.jpg"
+                  data-gtitle="Makeup"
+                  data-gdesc="Enhance your natural beauty with Glamora's high-performance makeup collection. Explore foundations, concealers, mascaras, and palettes designed for a flawless finish.">
+                  <img src="img/portfolio/work2.jpg" alt="Makeup"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Makeup </span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/portfolio/work3.jpg"
+                  data-gtitle="Lipsticks"
+                  data-gdesc="Find your perfect shade with our luxurious lipstick collection. From soft nudes to bold reds, enjoy rich pigmentation, long-lasting wear, and comfortable formulas.">
+                  <img src="img/portfolio/work3.jpg" alt="Lipsticks"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i>Lipsticks</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/portfolio/work4.jpg"
+                  data-gtitle="Fragrances"
+                  data-gdesc="Experience captivating scents crafted to leave a lasting impression. Our fragrance collection blends elegance, freshness, and sophistication for every occasion.">
+                  <img src="img/portfolio/work4.jpg" alt="Fragrances"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Fragrances </span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/portfolio/work5.jpg"
+                  data-gtitle="Beauty Tools"
+                  data-gdesc="Achieve professional-quality results with our beauty tools and accessories. Discover brushes, blenders, applicators, and essentials designed for effortless beauty routines.">
+                  <img src="img/portfolio/work5.jpg" alt="Beauty Tools"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Beauty Tools </span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIX 7 � GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- ============================================================
+         HISTORY � FIX 8 (alternating left/right text)
+         ============================================================ -->
+      <section id="history">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Our Journey</span>
+               <h2 class="stitle">A History of <span>Glamora</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">From a passion for beauty to a trusted destination for cosmetics and skincare-every milestone reflects our commitment to confidence and self-care.</p>
+            </div>
+            <div class="timeline" data-aos="fade-up">
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2012</div>
+                     <h5>The Beginning of Glamora</h5>
+                     <p>Glamora started with a vision to make premium beauty products accessible to everyone. Our first collection featured carefully selected skincare essentials and everyday makeup products.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2012</div>
+                     <h5>Evolution of Glamora</h5>
+                     <p>Glamora started with a vision to make premium beauty products accessible to everyone. Our first collection featured carefully selected skincare essentials and everyday makeup products.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2015</div>
+                     <h5>Expanding Our Beauty Collection</h5>
+                     <p>We introduced a wider range of lipsticks, foundations, fragrances, and beauty tools, helping customers discover products that matched their unique style.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2015</div>
+                     <h5>Expanding Our Beauty Collection</h5>
+                     <p>We introduced a wider range of lipsticks, foundations, fragrances, and beauty tools, helping customers discover products that matched their unique style.</p>
+                  </div>
+               </div>
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2019</div>
+                     <h5> Innovation &amp; Self-Care</h5>
+                     <p>We expanded our skincare range with nourishing formulas designed to promote healthy, radiant skin while maintaining affordability.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2019</div>
+                     <h5>Innovation &amp; Self-Care</h5>
+                     <p>We expanded our skincare range with nourishing formulas designed to promote healthy, radiant skin while maintaining affordability.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2026</div>
+                     <h5>Beauty Without Boundaries</h5>
+                     <p>Glamora enhanced its online shopping experience, offering faster delivery, exclusive offers, and a seamless beauty shopping journey.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2026</div>
+                     <h5>Beauty Without Boundaries</h5>
+                     <p>Glamora enhanced its online shopping experience, offering faster delivery, exclusive offers, and a seamless beauty shopping journey.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- CHEFS -->
+      <section id="chefs">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">The Glamora Team</span>
+               <h2 class="stitle">Meet Our Beauty <span>Experts</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/1.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Sophia Carter</div>
+                        <div class="chrole">Lead Makeup Artist</div>
+                        <div class="chexp">8 years experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/2.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Emma Wilson</div>
+                        <div class="chrole">Skincare Specialist</div>
+                        <div class="chexp">7 years experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/3.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Olivia Brown</div>
+                        <div class="chrole">Beauty Consultant</div>
+                        <div class="chexp">7 years experience</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/4.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Isabella Taylor</div>
+                        <div class="chrole">Fragrance Expert</div>
+                        <div class="chexp">9 years experience</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- HOURS -->
+      <section id="hours">
+         <div class="hrsbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl" style="color:#a5d6bc;">Opening Hours</span>
+               <h2 class="stitle" style="color:#fff;">We're Open <span style="color:var(--secondary);">For You</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="hrscard">
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Monday - Tuesday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot off"></div>
+                           <span class="hrstime" style="color:#ff6b6b;">Closed</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Wednesday - Thursday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 AM - 10:00 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Friday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 AM - 11:00 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Saturday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 AM - 11:30 PM</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Sunday</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">11:00 AM - 09:00 PM</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3" data-aos="zoom-in">
+                  <div class="hrscta">
+                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+                     <h4>Order Online</h4>
+                     <p>Get Our Products Delivered in Premium Quality</p>
+                     <a href="#menu" class="btnw">Order Now ?</a>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-aos="fade-left">
+                  <div class="hrscard">
+                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>Address</span><span class="hrstime" style="font-size:.8rem;">42 Flavor Street, NY</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>Phone</span><span class="hrstime" style="font-size:.8rem;">+1 (700) 765-4321</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">support@glamora.com</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What People Say</span>
+               <h2 class="stitle">Our Customers <span>Feedback</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="swiper tesSwiper" data-aos="fade-up">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">The Vitamin C Face Serum has transformed my skincare routine. My skin looks brighter, smoother, and healthier after just a few weeks.</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/1.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Monica Wilber</div>
+                              <div class="tesrl">Regular Customer</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">The Hydrating Moisturizer is lightweight yet deeply nourishing. Perfect for daily use and suitable for sensitive skin</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/2.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Megan</div>
+                              <div class="tesrl">Content Creator</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Fast delivery, beautiful packaging, and amazing product quality. Glamora has become my go-to beauty store!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/3.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Priya Sharma</div>
+                              <div class="tesrl">Stylist</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">I ordered makeup brushes and was impressed by their softness and durability. Great value for money!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/4.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Ananya</div>
+                              <div class="tesrl">Corporate Client</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination mt-4" style="position:static;"></div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- RESERVATION FORM -->
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Book a Beauty Consultation</span>
+               <h2 class="stitle">Make a <span>Appointment</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Get personalized skincare and makeup recommendations from our beauty experts</p>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Contact Info</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">We're happy to help your skincare and makeup recommendation.</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Opening Hours</strong><span style="color:#fff;font-size:.87rem;">Wed - Sun, 9 AM - 11 PM</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Call for Appointment</strong><span style="color:#fff;font-size:.87rem;">+1 (700) 765-4321</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Beauty Consultation</strong><span style="color:#fff;font-size:.87rem;">Get personalized skincare and makeup recommendations</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Location</strong><span style="color:#fff;font-size:.87rem;">42 Flavor Street, NY</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Full Name *</label><input type="text" class="fctrl" placeholder="Jenny"/></div>
+                        <div class="col-sm-6"><label class="flbl">Phone Number *</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
+                        <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Skin Type *</label>
+                           <select class="fctrl">
+                              <option>Dry Skin</option>
+                              <option>Oily Skin</option>
+                              <option>Combination Skin</option>
+                              <option>Sensitive Skin</option>
+                              <option>Acne-prone Skin </option>
+                              <option>Normal Skin</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-6"><label class="flbl">Date *</label><input type="date" class="fctrl"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Time *</label>
+                           <select class="fctrl">
+                              <option>09:00 AM</option>
+                              <option>10:00 AM</option>
+                              <option>11:00 AM</option>
+                              <option>12:00 PM</option>
+                              <option>01:00 PM</option>
+                              <option>02:00 PM</option>
+                              <option>06:00 PM</option>
+                              <option>07:00 PM</option>
+                              <option>08:00 PM</option>
+                              <option>09:00 PM</option>
+                              <option>10:00 PM</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Special Requests</label><textarea class="fctrl" rows="3" placeholder="Allergies, Acne, Anti-aging..."></textarea></div>
+                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirm Appointment</button></div>
+                     </div>
+                     <div class="sucmsg" id="resOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>We'll confirm via email shortly.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- BLOG -->
+      <section id="blog">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">New Arrivals &amp; Updates</span>
+               <h2 class="stitle">Our Latest <span>Product</span> Posts</h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/1.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Skincare &amp; Beauty</div>
+                        <div class="bltit"><a href="#">Five Essential Skincare Steps for Glowing Skin</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>Jenny</span><span><i class="fas fa-comment"></i>24 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/2.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">28</span><span class="bm">Feb</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Makeup Trends</div>
+                        <div class="bltit"><a href="#">Top Makeup Trends You Need to Try in 2026</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>Sarah Grain</span><span><i class="fas fa-comment"></i>18 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/3.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Product Reviews</div>
+                        <div class="bltit"><a href="#">Best Serums for Bright and Healthy Skin</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>Marie</span><span><i class="fas fa-comment"></i>32 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- NEWSLETTER -->
+      <section id="newsletter">
+         <div class="nlbg"></div>
+         <div class="container">
+            <div class="nlw text-center" data-aos="zoom-in">
+               <span class="slbl" style="color:rgba(255,255,255,.7);">Stay Connected</span>
+               <h2 class="mb-3" style="color:#fff;">Subscribe &amp; Get Exclusive <span style="color:var(--secondary);">Offers</span></h2>
+               <p class="mb-4" style="color:rgba(255,255,255,.78);">Get 15% off your first order plus early access to new product items</p>
+               <div class="nl-form-wrap">
+                  <input class="nlinput" type="email" id="nlEmail" placeholder="Enter your email address..."/>
+                  <button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Subscribe</button>
+               </div>
+               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>No spam, unsubscribe anytime.</p>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- ============================================================
+         FIX 6 � CONTACT FORM
+         ============================================================ -->
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Get In Touch</span>
+               <h2 class="stitle">Contact <span>Us</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Have a question, feedback, or beauty concerns? Reach out to Glamora—we're always happy to help you find your perfect beauty essentials.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div class="ctdark">
+                     <h4>Let's Talk</h4>
+                     <p class="ctsub">We typically respond within 2 hours during business hours.</p>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ctinfo"><strong>Address</strong><span>42 Flavor Street, Manhattan,<br/>New York, NY 10001</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ctinfo"><strong>Phone</strong><span>+1 (700) 765-4321</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-envelope"></i></div>
+                        <div class="ctinfo"><strong>Email</strong><span>support@glamora.com</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-clock"></i></div>
+                        <div class="ctinfo"><strong>Working Hours</strong><span>Wed - Sun: 9 AM - 11 PM</span></div>
+                     </div>
+                     <div class="ctsocrow">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Your Name *</label><input type="text" class="fctrl" placeholder="Sarah"/></div>
+                        <div class="col-sm-6"><label class="flbl">Email Address *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6"><label class="flbl">Phone Number</label><input type="tel" class="fctrl" placeholder="+1 (700) 000-0000"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Subject *</label>
+                           <select class="fctrl">
+                              <option>General Inquiry</option>
+                              <option>Product Information</option>
+                              <option>Skincare Consultation</option>
+                              <option>Partnership &amp; Collaboration</option>
+                              <option>Feedback &amp; Suggestions</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Message *</label><textarea class="fctrl" rows="5" placeholder="Write your message here..."></textarea></div>
+                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>Send Message</button></div>
+                     </div>
+                     <div class="sucmsg" id="ctcOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent! We'll reply within 2 hours.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Glam<span>ora</span></div>
+                  <p class="fdesc">We bring premium beauty, skincare, and makeup products together in one destination. Every product is carefully selected to help you look radiant, feel confident, and express your unique beauty.</p>
+                  <div class="fsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Quick Links</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+                     <li><a href="#category"><i class="fas fa-chevron-right"></i>Categories</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-right"></i>About></a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Products</a></li>
+                     <li><a href="#blog"><i class="fas fa-chevron-right"></i>New Launch</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Our Products</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Skincare</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Makeup</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Lipsticks</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Fragrances</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Haircare</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Beauty Tools</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">Get In Touch</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>Address</strong>42 Flavor Street, Manhattan, NY 10001</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>Phone</strong>+1 (700) 765-4321</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>Email</strong>support@sarabfood.com</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-clock"></i></div>
+                     <div class="fciinfo"><strong>Hours</strong>Wed - Sun: 09 AM - 11 PM</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>Glamora Cosmetics</span>. All Rights Reserved by <a target="_blank" class="mx-0 fw-bold text-success" href="https://bestwpware.com/">Bestwpware</a>. Made with <span><i class="fas fa-heart"></i></span>  <br>Distributed by <a target="_blank" class="mx-0 fw-bold text-success" href="https://themewagon.com">ThemeWagon</a></p>
+                  <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+               </div> -->
+            </div>
+         </div>
+      </footer>
+      <!-- Floating cart -->
+      <!-- <div class="cartfl"><i class="fas fa-shopping-cart"></i><span>My Cart</span><div class="ccount" id="cartCount">0</div></div> -->
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+	<!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
